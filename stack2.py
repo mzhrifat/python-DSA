@@ -29,7 +29,7 @@ class Stack:
         return self.head.value
     
     def isEmpty(Self):
-     return self.size == 0
+       return self.size == 0
     
     def stacksize(self):
         return self.size
