@@ -59,39 +59,27 @@ add('Siri')
 print("'Pete' is in the Hash Table:", contains('Pete'))
 """
 
-#Handling collision
-my_list = [
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  []
-]
+#looking up a name
 
-def hash_function(value):
-  sum_of_chars = 0
-  for char in value:
-    sum_of_chars += ord(char)
+my_list = [None]*10
+def has_function(value):
+    sum_of_chars = 0
+    for char in value:
+        sum_of_chars += ord(char)
 
-  return sum_of_chars % 10
+    return sum_of_chars % 10
 
 def add(name):
-  index = hash_function(name)
-  my_list[index].append(name)
+    index = has_function(name)
+    my_list[index] = name
 
 def contains(name):
-  index = hash_function(name)
-  return my_list[index] == name
+    index= has_function(name)
+    return my_list[index] == name
 
-add('Bob')
-add('Pete')
-add('Jones')
+add ('Bob')
+add('Oggy')
+add('Maeke')
 add('Lisa')
-add('Siri')
-add('Stuart')
-print(my_list)
+
+print(" 'Pete' is in the hash Table:", contains('Pete'))

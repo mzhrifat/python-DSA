@@ -1,0 +1,12 @@
+body{
+    padding: 100px;
+
+}
+.card {
+    border: 2 px solid;
+    padding: 10px;
+
+}
+.card:has(input:checked){
+    background-color: gray;
+}
