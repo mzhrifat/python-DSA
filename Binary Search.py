@@ -1,5 +1,5 @@
 #Create a Binary Search algorithm in Python:
-
+"""
 def binarySearch(arr, targetVal):
   left = 0
   right = len(arr) - 1
@@ -26,3 +26,7 @@ if result != -1:
   print("Found at index", result)
 else:
   print("Not found")
+
+  """
+#2
+
