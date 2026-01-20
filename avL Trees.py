@@ -240,3 +240,4 @@ inOrderTraversal(root)
 print('\nDeleting A')
 root = delete(root,'A')
 inOrderTraversal(root)
+
